@@ -137,8 +137,8 @@ In the case of classification, this imbalance may lead to a model that is biased
 library(themis)
 
 recipe(
-  outcome ~ .,
+  type ~ .,
   data = df
 ) |>
-step_downsample(outcome)
+step_downsample(type)
 ```
